@@ -1,0 +1,24 @@
+{
+  "name": "mern-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "backend:dev": "yarn workspace backend dev",
+    "frontend:dev": "yarn workspace frontend dev",
+    "backend:start": "yarn workspace backend start",
+    "frontend:start": "yarn workspace frontend start",
+    "backend:build": "yarn workspace backend build",
+    "frontend:build": "yarn workspace frontend build",
+    "dev": "yarn workspace backend dev & yarn workspace frontend dev",
+    "install-all": "yarn install",
+    "build": "yarn workspace frontend build && ls frontend/dist",
+    "start": "yarn workspace backend start"
+  },
+  "workspaces": [
+    "backend",
+    "frontend",
+    "shared"
+  ]
+}
