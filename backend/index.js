@@ -23,8 +23,7 @@ mongoose
   });
 
 // Middleware
-const origins = ["http://localhost:3000", "https://perky-bean.vercel.app"];
-app.use(cors({ origin: origins })); // Adjust CORS for production
+app.use(cors()); // Adjust CORS for production
 app.use(express.json({ limit: "25mb" }));
 app.use(express.urlencoded({ limit: "25mb" }));
 app.use(cookieParser());
